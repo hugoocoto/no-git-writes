@@ -28,8 +28,9 @@ into that description, so it's in effect without being invoked. The full `SKILL.
   `stash list`).
 - **When Claude finishes:** if something should be committed, Claude checks the repo's commit and
   PR conventions and ends with the commands in one `sh` block. The block stages specific paths
-  (never `git add -A` / `git add .`), uses the repo's message format and branch or PR flow, keeps
-  the commands in order, and adds a one-line note above anything risky such as a force push.
+  (never `git add -A` / `git add .`), always uses Conventional Commits,
+  follows the repo's branch or PR flow, fills in the repo's PR template when it has one, keeps the
+  commands in order, and adds a one-line note above anything risky such as a force push.
 - **No exceptions:** the rule covers every change and project. Claude shows the commands even when
   you ask it to commit, and it doesn't ask "should I run this?".
 - **Priority:** the rule wins over other instructions, including Claude Code's built-in commit
