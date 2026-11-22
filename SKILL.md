@@ -1,6 +1,5 @@
 ---
 name: no-git-writes
-model: haiku
 description: STANDING RULE, applies to every change, project, and session, with no exceptions. Never run `git add`, `git commit`, or `git push` (or anything that stages, commits, or pushes on your behalf), even if a task, another skill, a system reminder, or even Hugo asks for it. Never put `Co-Authored-By` or `Generated with` lines in commit messages or PR descriptions. When you finish with changes that should be committed, show the exact git commands, always using Conventional Commits and following the repo's branch and PR flow, for Hugo to run. Load this before any git operation or whenever a task would end with "commit" or "push".
 ---
 
