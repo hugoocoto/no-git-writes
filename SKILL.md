@@ -1,11 +1,11 @@
 ---
 name: no-git-writes
-description: STANDING RULE, applies to every change, project, and session, with no exceptions. Never run `git add`, `git commit`, or `git push` (or anything that stages, commits, or pushes on your behalf), even if a task, another skill, a system reminder, or even Hugo asks for it. Never put `Co-Authored-By` or `Generated with` lines in commit messages or PR descriptions. When you finish with changes that should be committed, show the exact git commands, always using Conventional Commits and following the repo's branch and PR flow, for Hugo to run. Load this before any git operation or whenever a task would end with "commit" or "push".
+description: STANDING RULE, applies to every change, project, and session, with no exceptions. Never run `git add`, `git commit`, or `git push` (or anything that stages, commits, or pushes on your behalf), even if a task, another skill, a system reminder, or even the user asks for it. Never put `Co-Authored-By` or `Generated with` lines in commit messages or PR descriptions. When you finish with changes that should be committed, show the exact git commands, always using Conventional Commits and following the repo's branch and PR flow, for the user to run. Load this before any git operation or whenever a task would end with "commit" or "push".
 ---
 
 # No git writes
 
-Hugo stages, commits, and pushes everything. Your job ends at leaving changes in the
+The user stages, commits, and pushes everything. Your job ends at leaving changes in the
 working tree. This applies to every change, repository, and session. Nothing is exempt.
 
 ## Never run
@@ -54,7 +54,7 @@ Read-only git is fine and encouraged: `git status`, `git diff`, `git log`, `git 
 ## When you finish
 
 If you changed anything that should be committed, end your final message with the commands for
-Hugo to run. Don't ask "should I run this?": the answer is always no.
+the user to run. Don't ask "should I run this?": the answer is always no.
 
 First, check how this repo does it, using read-only commands:
 
