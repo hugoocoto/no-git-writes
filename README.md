@@ -14,6 +14,24 @@ The skill alone is only a request: nothing technically stops Claude from ignorin
 rules are the guarantee. The skill is still useful because it makes Claude show the commands
 instead of trying to run them, hitting a denial, and then trying something else.
 
+## Install
+
+1. Clone the skill into your personal skills directory:
+
+   ```sh
+   mkdir -p ~/.claude/skills
+   git clone https://github.com/hugoocoto/no-git-writes.git ~/.claude/skills/no-git-writes
+   ```
+
+2. Add the rules from [The deny rules](#the-deny-rules) to `permissions.deny` in
+   `~/.claude/settings.json`. Cloning doesn't do this, and without them the skill is only a
+   request. Keep any rules you already have.
+
+3. Restart Claude Code, then run `/permissions` to confirm the deny rules are active and `/skills`
+   to confirm `no-git-writes` is listed.
+
+To update later, run `git -C ~/.claude/skills/no-git-writes pull`.
+
 ## The skill
 
 Claude always sees the skill's one-line description in its skill listing, and the rule is written
